@@ -7,8 +7,8 @@ describe('1rm', function () {
 
   // 400# x 4
   var expectations = {
-    brzycki: 436,
     epley: 453,
+    brzycki: 436,
     lander: 441,
     lombardi: 459,
     mayhew: 466,

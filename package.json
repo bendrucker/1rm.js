@@ -1,7 +1,7 @@
 {
   "name": "1rm",
   "version": "1.0.0",
-  "description": "Estimate one rep maximum lifts in using the Epley or Brzycki formulas",
+  "description": "Estimate one rep maximum lifts in using any popular formula",
   "main": "./src",
   "scripts": {
     "test": "istanbul cover node_modules/.bin/_mocha -- ./test"

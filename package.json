@@ -1,0 +1,23 @@
+{
+  "name": "1rm",
+  "version": "1.0.0",
+  "description": "Estimate one rep maximum lifts in using the Epley or Brzycki formulas",
+  "main": "./src",
+  "scripts": {
+    "test": "istanbul cover node_modules/.bin/_mocha -- ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bendrucker/1rm.js.git"
+  },
+  "keywords": [
+    "weightlifting",
+    "1rm"
+  ],
+  "author": "Ben Drucker <bvdrucker@gmail.com> (http://www.bendrucker.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bendrucker/1rm.js/issues"
+  },
+  "homepage": "https://github.com/bendrucker/1rm.js"
+}

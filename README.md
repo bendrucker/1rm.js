@@ -1,4 +1,4 @@
-1rm
+1rm.js
 ===
 
 Estimate one rep maximum lifts in JS using the Epley or Brzycki formulas

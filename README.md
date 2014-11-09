@@ -1,8 +1,32 @@
 1rm.js
 ===
 
-Estimate one rep maximum lifts in JS using the Epley or Brzycki formulas
+Estimate one rep maximum lifts in JS using a variety of formulas
 
-### Other Formulas
+## Setup
+```bash
+$ npm install 1rm
+```
+```js
+var rm = require('1rm');
+```
 
-One rep maximum estimation formulas [tend to underestimate](http://www.researchgate.net/publication/232239360_The_Accuracy_of_Prediction_Equations_for_Estimating_1-RM_Performance_in_the_Bench_Press_Squat_and_Deadlift) the true 1RM, dramatically so in the case of the deadlift. Underestimating a true maximum is almost always beneficial. I'll take PRs for other formulas but have chosen to only include the two most popular.
+## Formulas
+* `epley`: [Epley](http://en.wikipedia.org/wiki/One-repetition_maximum#Epley_Formula)
+* `brzycki`: [Brzycki](http://en.wikipedia.org/wiki/One-repetition_maximum#Brzycki)
+* `lander`: [Lander](http://en.wikipedia.org/wiki/One-repetition_maximum#Lander)
+* `lombardi`: [Lombardi](http://en.wikipedia.org/wiki/One-repetition_maximum#Lombardi)
+* `mayhew`: [Mayhew et al.](http://en.wikipedia.org/wiki/One-repetition_maximum#Mayhew_et_al.)
+* `oconner`: [O'Conner et al.](http://en.wikipedia.org/wiki/One-repetition_maximum#O.27Conner_et_al.)
+* `wathan`: [Wathan](http://en.wikipedia.org/wiki/One-repetition_maximum#Wathan)
+
+## API
+
+#### `{{method}}(weight, reps)` -> `Number`
+Accepts `weight` and `reps` both `Number` and outputs the estimated one rep maximum (also `Number`). For browser use, make sure to parse your numeric inputs. Numeric strings are not supported. 
+
+## Example
+
+```js
+rm.epley(400, 4) // 453.33...
+```

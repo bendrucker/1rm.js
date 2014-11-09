@@ -5,20 +5,21 @@ var rm     = require('../');
 
 describe('1rm', function () {
 
-  describe('#epley', function () {
+  // 400# x 4
+  var expectations = {
+    brzycki: 436,
+    epley: 453,
+    lander: 441,
+    lombardi: 459,
+    mayhew: 466,
+    oconner: 440,
+    wathan: 451 
+  };
 
-    it('calculates a 1RM using the Epley method', function () {
-      expect(rm.epley(100, 10)).to.be.closeTo(133, 1);
+  Object.keys(expectations).forEach(function (method) {
+    it('can estimate with the #' + method + ' method', function () {
+      expect(rm[method](400, 4)).to.be.closeTo(expectations[method], 1);
     });
-
-  });
-
-  describe('#brzycki', function () {
-
-    it('calculates a 1RM using the Brzycki method', function () {
-      expect(rm.brzycki(100, 10)).to.be.closeTo(133, 1);
-    });
-
   });
 
 });

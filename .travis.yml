@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.10'
+deploy:
+  provider: npm
+  email: bvdrucker@gmail.com
+  api_key:
+    secure: dCDta0YtEiArJpY/Fi2A8EjqiTxz8HeuKunbD7IliNS15VhUH1hB55IAJMB1ldUcp1uibpSp79lS/teaQyQLhB1WFrKMXOy6+a4ux7x2MiEDp84b+T82SjWUNeCEcycmVXdUrA+qnGWT3Ecj3dOjcAnUkGe4SjNMEqnZfmQjnms=
+  on:
+    tags: true
+    all_branches: true
+    repo: bendrucker/1rm.js

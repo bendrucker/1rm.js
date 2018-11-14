@@ -1,6 +1,8 @@
 1rm.js
 ===
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/1rm.js.svg)](https://greenkeeper.io/)
+
 Estimate one rep maximum lifts in JS using a variety of formulas
 
 ## Setup
